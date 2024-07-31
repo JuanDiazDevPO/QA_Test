@@ -1,0 +1,315 @@
+{
+  "id": "8b048141-db12-48c6-86f9-4fcf12427e10",
+  "version": "2.0",
+  "name": "ZoeFinnancialDashboard",
+  "url": "https://dashboard-test.zoefin.com",
+  "tests": [{
+    "id": "35cbf67a-65a8-408e-89a8-b60a9b1b590f",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "ead7330a-7239-44c7-80ee-05a49be6d0cf",
+    "name": "Add member",
+    "commands": [{
+      "id": "d3217ee3-3bd8-48a4-b0e2-708cce3c5d7c",
+      "comment": "",
+      "command": "executeScript",
+      "target": " const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';     let email = '';     const length = 10;    for (let i = 0; i < length; i++) {         const randomIndex = Math.floor(Math.random() * characters.length);         email += characters[randomIndex];     }      return email + '@gmail.com';",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "a0476220-4841-412c-af4a-5b9e90a5b440",
+      "comment": "",
+      "command": "executeScript",
+      "target": " const chars = 'abcdefghijklmnopqrstuvwxyz';     return Array.from({ length: 10 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "937d21a6-3fcc-4408-a25b-6bcef3856ad0",
+      "comment": "",
+      "command": "executeScript",
+      "target": " const chars = 'abcdefghijklmnopqrstuvwxyz';     return Array.from({ length: 10 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');",
+      "targets": [],
+      "value": "lastname"
+    }, {
+      "id": "bc5b99d3-e571-4bcb-b3ca-1fc5304af091",
+      "comment": "",
+      "command": "store",
+      "target": "number",
+      "targets": [],
+      "value": "5099999999"
+    }, {
+      "id": "05007bf6-7cf9-423b-8f4e-5cc82ce38093",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard/advice-request",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b61e33f-3ef9-4548-b90d-3eb6f01dcd27",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f451112a-1753-4d9f-917d-572563ddd761",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Add New Client')]",
+      "targets": [
+        ["css=.ant-menu-item-active > .ant-menu-title-content", "css:finder"],
+        ["xpath=//ul[2]/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add New Client')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e49493dc-7f8d-43fe-a9e6-3f599356c91f",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd2a0236-eee4-434a-86e1-e5ee74ae0cf0",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-search",
+      "targets": [
+        ["id=input-search", "id"],
+        ["css=#input-search", "css:finder"],
+        ["xpath=//input[@id='input-search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74c1b235-1121-4513-a48d-14bc1cadc23e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.styles-module_inputSearch__inputWrap__qpaT3",
+      "targets": [
+        ["css=.styles_searchAdvisorForHousehold__option__4SpHO", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "605213eb-c1e6-468d-baf5-f63623ef854e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.styles_searchAdvisorForHousehold__option__4SpHO",
+      "targets": [
+        ["css=.styles_newClientOptions__card__1A_Gb:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Add New Household')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72bfc65e-be76-4771-bee6-1e89ad7511be",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14d26c52-ef9f-4a2a-a465-4d1626b5cb09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-button",
+      "targets": [
+        ["css=.next-button", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f3cd91-9d9f-4631-9aab-3c491da77da8",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "129b13cc-afcc-4aeb-b29e-a58af6a5dafe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Add New Household')]",
+      "targets": [
+        ["css=.styles_newClientOptions__card__1A_Gb:nth-child(2) > span", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add New Household')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fba72b3-8c5f-4af2-bd0e-1837acc1ec39",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.next-button",
+      "targets": [
+        ["css=.next-button", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "395a5eed-1c00-46d5-98e4-863f93515219",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-button",
+      "targets": [
+        ["css=.next-button", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a6ce763-5bc3-469f-bd95-003bf2d3fb19",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50a55412-13b7-41f5-a1bd-002a61d88b14",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(2) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "8cb2d8aa-c949-4fb1-9db7-07f081e0d000",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(1) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "5c807e02-34c7-44f5-b2c3-5c84aae95b3a",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(2) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c622a676-9710-4414-bbba-39dfeebc8e80",
+      "comment": "",
+      "command": "click",
+      "target": "name=last_name",
+      "targets": [
+        ["name=last_name", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(3) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='last_name']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[3]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "056a91b7-7f25-4101-802b-301926a60680",
+      "comment": "",
+      "command": "type",
+      "target": "name=last_name",
+      "targets": [
+        ["name=last_name", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(3) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='last_name']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[3]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/div/input", "xpath:position"]
+      ],
+      "value": "${lastname}"
+    }, {
+      "id": "a1107aa4-4333-4f8b-8b88-18f1ec4163b9",
+      "comment": "",
+      "command": "click",
+      "target": "name=mobile",
+      "targets": [
+        ["name=mobile", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(4) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='mobile']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[4]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db582fd9-d628-447d-8b0d-403cac36078a",
+      "comment": "",
+      "command": "type",
+      "target": "name=mobile",
+      "targets": [
+        ["name=mobile", "name"],
+        ["css=.styles-module_baseInput__container__w-DHj:nth-child(4) .styles-module_baseInput__input__JY0W6", "css:finder"],
+        ["xpath=//input[@name='mobile']", "xpath:attributes"],
+        ["xpath=//div[@id='household-form']/div/div[4]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/label/div/input", "xpath:position"]
+      ],
+      "value": "(509) 999-9999"
+    }, {
+      "id": "7074f5da-ce0c-4548-82b0-2faf06fb5e96",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ddbd4eb-e14a-47b7-98fa-8dba5d3b9ca6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.next-button",
+      "targets": [
+        ["css=.next-button", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8594756e-6892-4521-be88-ae6ff9cefeb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-button",
+      "targets": [
+        ["css=.next-button", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a597ea-0971-4de0-b4c0-4633cb84d157",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.styles_cardWrapper__information_item__XIuL6:nth-child(2) > p",
+      "targets": [
+        ["css=.styles_cardWrapper__information_item__XIuL6:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='default-page-layout']/div/div[3]/div/div[2]/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/p", "xpath:position"]
+      ],
+      "value": "${email}"
+    }]
+  }],
+  "suites": [{
+    "id": "0fb16952-6eed-442f-98b1-2933ff090227",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35cbf67a-65a8-408e-89a8-b60a9b1b590f"]
+  }],
+  "urls": ["https://dashboard-test.zoefin.com/"],
+  "plugins": []
+}
